@@ -45,13 +45,13 @@ assert (len(decays)*args.train_size) % args.batch_size == 0
 X_train, y_train = load_data(decays,train_start,train_stop)
 
 # Set range of validation set
-valid_start, valid_stop = train_stop, train_stop+args.valid_size
+valid_start, valid_stop = 160000, 160000+args.valid_size
 assert valid_stop  >  valid_start
 assert valid_start >= train_stop
 X_valid, y_valid = load_data(decays,valid_start,valid_stop)
 
 # Set range of test set
-test_start, test_stop = valid_stop, valid_stop+args.test_size
+test_start, test_stop = 204800, 204800+args.test_size
 assert test_stop  >  test_start
 assert test_start >= valid_stop
 X_test, y_test = load_data(decays,test_start,test_stop)

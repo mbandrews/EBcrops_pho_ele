@@ -1,0 +1,20 @@
+name: hep
+channels:
+    - https://conda.anaconda.org/menpo
+    - conda-forge
+dependencies:
+    - python
+    - numpy
+    - matplotlib
+    - jupyter
+    - opencv3
+    - scikit-learn
+    - scikit-image
+    - scipy
+    - h5py
+    - seaborn
+    - pandas
+    - pip:
+        - tensorflow==1.2.1
+        - git+https://github.com/fchollet/keras.git
+        - dask[array] 
